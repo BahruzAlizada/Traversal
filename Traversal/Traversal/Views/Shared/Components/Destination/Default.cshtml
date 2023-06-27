@@ -1,0 +1,24 @@
+﻿@model List<Destination>
+@foreach (Destination destination in Model)
+{
+    <div class="col-lg-6 subject-card mt-4">
+        <div class="subject-card-header p-4">
+            <a href="#" class="card_title p-lg-4d-block">
+                <div class="row align-items-center">
+                    <div class="col-sm-5 subject-img">
+                        <img src="~/assets/images/@destination.Image" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-sm-7 subject-content mt-sm-0 mt-4">
+                        <h4>@destination.City</h4>
+                        <p>@destination.DayNight</p>
+                        <div class="dst-btm">
+                            <h6 class=""> Start From </h6>
+                            <span>$@destination.Price</span>
+                        </div>
+                        <p class="sub-para">@destination.Description</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+}

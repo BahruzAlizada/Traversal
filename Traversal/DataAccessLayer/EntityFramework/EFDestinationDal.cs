@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.EntityFramework
 {
-    public class EFDestinationDal : GenericRepository<Destination>,IDestinationDal
+    public class EFDestinationDal : GenericRepository<Destination>, IDestinationDal
     {
+        
     }
 }

@@ -1,5 +1,7 @@
 ﻿using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,29 +14,23 @@ namespace DataAccessLayer.Repository
     {
         public void Delete(T t)
         {
-            using var c = new Context();
-            c.Remove(t);
-            c.SaveChanges();
+            throw new NotImplementedException();
         }
 
-        public List<T> GetList()
+        public async Task<List<T>> GetListAsync()
         {
             using var c = new Context();
-           return c.Set<T>().ToList();
+            return await c.Set<T>().ToListAsync();
         }
 
-        public void Insert(T t)
+        public Task InsertAsync(T t)
         {
-            using var c = new Context();
-            c.Add(t);
-            c.SaveChanges ();
+            throw new NotImplementedException();
         }
 
-        public void Update(T t)
+        public Task UpdateAsync(T t)
         {
-            using var c = new Context();
-            c.Update(t);
-            c.SaveChanges();
+            throw new NotImplementedException();
         }
     }
 }

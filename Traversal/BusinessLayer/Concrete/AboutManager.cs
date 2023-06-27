@@ -1,6 +1,8 @@
 ﻿using BusinessLayer.Abstract;
 using DataAccessLayer.Abstract;
+using DataAccessLayer.Concrete;
 using EntityLayer.Concrete;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,29 +19,35 @@ namespace BusinessLayer.Concrete
             _aboutDal = aboutDal;
         }
 
-        public About GetById(int id)
+        public async Task<About> GetByAboutOne()
+        {
+            using var c = new Context();
+            return await c.Set<About>().FirstOrDefaultAsync();
+        }
+
+        public Task<About> GetByIdAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public List<About> GetList()
+        public Task<List<About>> GetListAsync()
         {
-            return _aboutDal.GetList();
+            throw new NotImplementedException();
         }
 
-        public void TAdd(About t)
+        public Task TAddasync(About t)
         {
-            _aboutDal.Insert(t);
+            throw new NotImplementedException();
         }
 
         public void TDelete(About t)
         {
-            _aboutDal.Delete(t);
+            throw new NotImplementedException();
         }
 
-        public void TUpdate(About t)
+        public Task TUpdateAsync(About t)
         {
-            _aboutDal.Update(t);
+            throw new NotImplementedException();
         }
     }
 }

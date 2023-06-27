@@ -8,10 +8,10 @@ namespace BusinessLayer.Abstract
 {
     public interface IGenericService<T>
     {
-        void TAdd(T t);
+        Task TAddasync(T t);
         void TDelete(T t);
-        void TUpdate(T t);
-        T GetById(int id);
-        List<T> GetList();
+        Task TUpdateAsync(T t);
+        Task<T> GetByIdAsync(int id);
+        Task<List<T>> GetListAsync();
     }
 }

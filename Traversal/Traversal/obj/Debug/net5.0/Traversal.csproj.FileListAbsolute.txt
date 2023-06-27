@@ -160,3 +160,7 @@ C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\bin\Debug\net
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\About\Index.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Destination\Index.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Contact\Index.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\Slider\Default.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\Testimonial\Default.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\Destination\Default.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\SubAbout\Default.cshtml.g.cs

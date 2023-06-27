@@ -14,7 +14,12 @@ namespace DataAccessLayer.Concrete
         {
             optionsBuilder.UseSqlServer("Server= DESKTOP-OK3QKVJ;database=Travelsal;Integrated Security=true");
         }
-        
+
+        public SubAbout FindAsync(int id)
+        {
+            throw new NotImplementedException();
+        }
+
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<About> Abouts { get; set; }
         public DbSet<SubAbout> SubAbouts { get; set; }

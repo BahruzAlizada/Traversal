@@ -1,0 +1,22 @@
+﻿@model List<Testimonial>
+@foreach (Testimonial testimonial in Model)
+{
+    <div class="item">
+        <div class="testimonial-content">
+            <div class="testimonial">
+                <blockquote>
+                    <span class="fa fa-quote-left" aria-hidden="true"></span>@testimonial.Comment 
+                </blockquote>
+                <div class="testi-des">
+                    <div class="test-img">
+                        <img src="~/assets/images/@testimonial.Image" class="img-fluid" alt="client-img">
+                    </div>
+                    <div class="peopl align-self">
+                        <h3>@testimonial.FullName</h3>
+                        <p class="indentity">Example City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}

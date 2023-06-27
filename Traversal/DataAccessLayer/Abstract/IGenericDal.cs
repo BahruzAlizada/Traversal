@@ -8,9 +8,9 @@ namespace DataAccessLayer.Abstract
 {
     public interface IGenericDal<T>
     {
-        void Insert(T t);
-        void Update(T t);
+        Task InsertAsync(T t);
+        Task UpdateAsync(T t);
         void Delete(T t);
-        List<T> GetList();
+        Task<List<T>> GetListAsync();
     }
 }
