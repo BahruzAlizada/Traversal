@@ -25,7 +25,7 @@ namespace BusinessLayer.Concrete
             return await c.Set<About>().FirstOrDefaultAsync();
         }
 
-        public Task<About> GetByIdAsync(int id)
+        public Task<About> GetByIdAsync(int? id)
         {
             throw new NotImplementedException();
         }

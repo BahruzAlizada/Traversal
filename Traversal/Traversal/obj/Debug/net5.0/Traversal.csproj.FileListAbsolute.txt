@@ -164,3 +164,8 @@ C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\Testimonial\Default.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\Destination\Default.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\SubAbout\Default.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\Team\Default.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\Featured\Default.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Shared\Components\ContactInfo\Default.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Destination\Detail.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\Home\Index1.cshtml.g.cs

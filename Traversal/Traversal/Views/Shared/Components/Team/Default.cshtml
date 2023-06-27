@@ -1,0 +1,21 @@
+﻿@model List<Team>
+
+@foreach(Team team in Model){
+    <div class="col-lg-3 col-6 mt-lg-5 mt-4">
+        <div class="box16">
+            <a href="#url"><img src="~/assets/images/@team.Image" alt="" class="img-fluid" /></a>
+            <div class="box-content">
+                <h3 class="title text-white">@team.FullName</h3>
+                <span class="post">@team.Description</span>
+                <ul class="social">
+                    <li>
+  
+                    </li>
+                    <li>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+}	

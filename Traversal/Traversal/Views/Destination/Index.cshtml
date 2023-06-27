@@ -25,9 +25,9 @@
                 {
                     <div class="col-lg-4 col-md-4 col-6">
                         <div class="column">
-                            <a href="blog-single.html"><img src="~/assets/images/@destination.Image" alt="" class="img-fluid"></a>
+                            <a asp-action="Detail" asp-route-id="@destination.Id"><img src="~/assets/images/@destination.Image" alt="" class="img-fluid"></a>
                             <div class="info">
-                                <h4><a href="blog-single.html">@destination.City</a></h4>
+                                <h4><a asp-action="Detail" asp-route-id="@destination.Id">@destination.City</a></h4>
                                 <p>@destination.DayNight </p>
                                 <div class="dst-btm">
                                     <h6 class="">Start From </h6>

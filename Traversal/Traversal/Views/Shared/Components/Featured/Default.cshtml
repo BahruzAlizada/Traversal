@@ -1,0 +1,42 @@
+﻿@model List<Destination>
+
+@foreach (Destination item in Model)
+{
+    <div class="maghny-gd-1 col-lg-6">
+    <div class="maghny-grid">
+        <figure class="effect-lily border-radius  m-0">
+            <img class="img-fluid" src="~/assets/images/@item.Image" alt="" />
+            <figcaption>
+                <div>
+                    <h4>@item.DayNight</h4>
+                    <p>From @item.Price$ </p>
+                </div>
+
+            </figcaption>
+        </figure>
+    </div>
+    </div>
+    break;
+}
+
+<div class="maghny-gd-1 col-lg-6 mt-lg-0 mt-4">
+    <div class="row">
+        @foreach (Destination destination in Model.Skip(1))
+        {
+            <div class="maghny-gd-1 col-6 my-3">
+                <div class="maghny-grid">
+                    <figure class="effect-lily border-radius">
+                        <img class="img-fluid" src="~/assets/images/@destination.Image" alt="" />
+                        <figcaption>
+                            <div>
+                                <h4>@destination.DayNight</h4>
+                                <p>From @destination.Price$ </p>
+                            </div>
+
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        }
+    </div>
+</div>

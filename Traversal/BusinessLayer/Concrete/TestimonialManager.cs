@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
         {
             _testimonailDal = testimonailDal;
         }
-        public Task<Testimonial> GetByIdAsync(int id)
+        public Task<Testimonial> GetByIdAsync(int? id)
         {
             throw new NotImplementedException();
         }

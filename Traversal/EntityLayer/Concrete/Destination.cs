@@ -20,5 +20,6 @@ namespace EntityLayer.Concrete
         public DateTime CreatedTime { get; set; }
         public bool Featured { get; set; }
         public bool IsDeactive { get; set; }
+        public DestinationDetail DestinationDetail { get; set; }
     }
 }

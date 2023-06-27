@@ -19,7 +19,7 @@ namespace BusinessLayer.Concrete
             _DestinationDal = destinationDal;
         }
 
-        public Task<Destination> GetByIdAsync(int id)
+        public Task<Destination> GetByIdAsync(int? id)
         {
             throw new NotImplementedException();
         }

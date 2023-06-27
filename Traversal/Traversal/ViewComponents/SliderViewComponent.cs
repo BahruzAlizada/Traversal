@@ -1,20 +1,20 @@
-﻿using DataAccessLayer.Abstract;
+﻿using BusinessLayer.Concrete;
+using DataAccessLayer.Abstract;
+using DataAccessLayer.EntityFramework;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Traversal.ViewComponents
 {
     public class SliderViewComponent : ViewComponent
     {
-        //private readonly ISliderDal _sliderDal;
-        //public SliderViewComponent(ISliderDal sliderDal)
-        //{
-        //    sliderDal = _sliderDal;
-        //}
-
+        SliderManager sliderManager = new SliderManager(new EFSliderDal());
         public async Task<IViewComponentResult> InvokeAsync()
         {
-            return View();
+            List<Slider> sliders = await sliderManager.GetListAsync();
+            return View(sliders);
         }
     }
 }

@@ -18,7 +18,7 @@ namespace BusinessLayer.Concrete
         {
             subAboutDal = _subAboutDal;
         }
-        public async Task<SubAbout> GetByIdAsync(int id)
+        public async Task<SubAbout> GetByIdAsync(int? id)
         {
             using var c = new Context();
             return await c.Set<SubAbout>().FirstOrDefaultAsync(x => x.Id == id);

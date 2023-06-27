@@ -11,7 +11,7 @@ namespace BusinessLayer.Abstract
         Task TAddasync(T t);
         void TDelete(T t);
         Task TUpdateAsync(T t);
-        Task<T> GetByIdAsync(int id);
+        Task<T> GetByIdAsync(int? id);
         Task<List<T>> GetListAsync();
     }
 }
