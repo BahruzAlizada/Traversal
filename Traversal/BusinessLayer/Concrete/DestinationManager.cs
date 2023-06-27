@@ -30,6 +30,12 @@ namespace BusinessLayer.Concrete
             return await c.Set<Destination>().ToListAsync();
         }
 
+        public async Task<Destination> IncludeAsync(int? id)
+        {
+            using var c = new Context();
+            return await c.Set<Destination>().Include(x => x.DestinationDetail).FirstOrDefaultAsync(x=>x.Id==id);
+        }
+
         public Task TAddasync(Destination t)
         {
             throw new NotImplementedException();

@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstract
 {
     public interface IDestinantionService : IGenericService<Destination>
     {
+        Task<Destination> IncludeAsync(int? id);
     }
 }

@@ -23,10 +23,9 @@ namespace Traversal.Controllers
         {
             if (id == null)
                 return NotFound();
-            Destination destination = await destinationManager.GetByIdAsync(id);
+            Destination destination = await destinationManager.IncludeAsync(id);
             if (destination == null)
                 return BadRequest();
-
             return View(destination);
         }
         #endregion

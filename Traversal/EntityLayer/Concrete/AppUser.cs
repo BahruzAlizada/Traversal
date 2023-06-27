@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    internal class Comment
+    internal class AppUser
     {
     }
 }

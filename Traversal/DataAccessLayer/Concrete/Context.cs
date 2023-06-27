@@ -29,5 +29,6 @@ namespace DataAccessLayer.Concrete
         public DbSet<ContactForm> ContactForms { get; set; }
         public DbSet<NewsLetter> NewsLetters { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<DestinationDetail> DestinationDetails { get; set; }
     }
 }
