@@ -28,13 +28,20 @@ using Traversal.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\_ViewImports.cshtml"
+using Traversal.ViewsModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\_ViewImports.cshtml"
 using EntityLayer.Concrete;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"82a417d6ca5dc5a791923ffd77e145bd18d12236", @"/Views/Shared/Components/Featured/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d12b22944ccdb0db5b735e5162ab2aa607e1c5dc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e20fb38c3f65a54875188bcf06054c04eba34df1", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_Featured_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Destination>>
     #nullable disable
@@ -75,7 +82,7 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
             WriteLiteral("    <div class=\"maghny-gd-1 col-lg-6\">\r\n    <div class=\"maghny-grid\">\r\n        <figure class=\"effect-lily border-radius  m-0\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "82a417d6ca5dc5a791923ffd77e145bd18d122364608", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "82a417d6ca5dc5a791923ffd77e145bd18d122364810", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -134,7 +141,7 @@ AddHtmlAttributeValue("", 253, item.Image, 253, 11, false);
 #line hidden
 #nullable disable
             WriteLiteral("            <div class=\"maghny-gd-1 col-6 my-3\">\r\n                <div class=\"maghny-grid\">\r\n                    <figure class=\"effect-lily border-radius\">\r\n                        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "82a417d6ca5dc5a791923ffd77e145bd18d122367880", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "82a417d6ca5dc5a791923ffd77e145bd18d122368082", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

@@ -1,0 +1,86 @@
+﻿@{
+	Layout = "_AccountLayout";
+}
+
+
+@{
+	ViewBag.Title = "Register";
+}
+
+@model RegisterVM
+
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="~/account/images/img-01.png" alt="IMG">
+				</div>
+
+				<form method="post" class="login100-form validate-form">
+					<span class="login100-form-title">
+						 Sign Up
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" asp-for="Name" placeholder="Name">
+						<span class="text-danger" asp-validation-for="Name"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" asp-for="Surname" placeholder="Surname">
+						<span class="text-danger" asp-validation-for="Surname"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" asp-for="Username" placeholder="Username">
+						<span class="text-danger" asp-validation-for="Username"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" asp-for="Email" placeholder="Email">
+						<span class="text-danger" asp-validation-for="Email"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" asp-for="@Model.PhoneNumber" placeholder="Phone">
+						<span class="text-danger" asp-validation-for="PhoneNumber"></span>
+					</div>
+
+				<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+					<input class="input100" asp-for="Password" placeholder="Check Password">
+					<span class="text-danger" asp-validation-for="Password"></span>
+				</div>
+
+					<div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
+						<input class="input100" asp-for="ConfirmPassword" placeholder="Check Password">
+						<span class="text-danger" asp-validation-for="ConfirmPassword"></span>
+					</div>
+
+					<div>
+						<input asp-for="@Model.IsRemember" />
+						<label>Remember Me ?</label>
+					</div>
+
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn">
+							Sign Up
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Do you have an 
+						</span>
+						<a class="txt2" asp-controller="Account" asp-action="Login">
+							account ?
+						</a>
+					</div>
+		
+				</form>
+			</div>
+		</div>
+	</div>
+
+@section ScriptAccount{
+	<partial name="_ValidationScriptsPartial" />
+}

@@ -28,13 +28,20 @@ using Traversal.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\_ViewImports.cshtml"
+using Traversal.ViewsModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\_ViewImports.cshtml"
 using EntityLayer.Concrete;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cea43839130907190118014cde652f1c12e60fbe", @"/Views/Destination/Detail.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d12b22944ccdb0db5b735e5162ab2aa607e1c5dc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e20fb38c3f65a54875188bcf06054c04eba34df1", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Destination_Detail : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Destination>
     #nullable disable
@@ -75,7 +82,7 @@ using EntityLayer.Concrete;
             <h2 class=""title"">Destination Detail</h2>
             <ul class=""breadcrumbs-custom-path mt-2"">
                 <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cea43839130907190118014cde652f1c12e60fbe5504", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cea43839130907190118014cde652f1c12e60fbe5706", async() => {
                 WriteLiteral("Home");
             }
             );
@@ -114,7 +121,7 @@ using EntityLayer.Concrete;
                     <div class=""single-post-image"">
                         <div class=""post-content"">
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cea43839130907190118014cde652f1c12e60fbe7583", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "cea43839130907190118014cde652f1c12e60fbe7785", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -195,7 +202,7 @@ AddHtmlAttributeValue("", 1076, Model.Image, 1076, 12, false);
 #line hidden
 #nullable disable
             WriteLiteral("\r\n                <div class=\"sing-post-thumb mb-5 row pt-3\">\r\n                    <div class=\"col-sm-6\">\r\n                        <a href=\"#url\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cea43839130907190118014cde652f1c12e60fbe12049", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cea43839130907190118014cde652f1c12e60fbe12251", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -220,7 +227,7 @@ AddHtmlAttributeValue("", 2191, Model.DestinationDetail.ImageOne, 2191, 33, fals
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</a>\r\n                    </div>\r\n                    <div class=\"col-sm-6 mt-sm-0 mt-3\">\r\n                        <a href=\"#url\">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cea43839130907190118014cde652f1c12e60fbe13881", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "cea43839130907190118014cde652f1c12e60fbe14083", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();

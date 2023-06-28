@@ -28,13 +28,20 @@ using Traversal.Models;
 #nullable disable
 #nullable restore
 #line 3 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\_ViewImports.cshtml"
+using Traversal.ViewsModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\_ViewImports.cshtml"
 using EntityLayer.Concrete;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b03578c1e812f88edc60df860e5c34a069fde3ff", @"/Views/Shared/Components/Slider/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d12b22944ccdb0db5b735e5162ab2aa607e1c5dc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e20fb38c3f65a54875188bcf06054c04eba34df1", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Shared_Components_Slider_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Slider>>
     #nullable disable
@@ -87,14 +94,14 @@ using EntityLayer.Concrete;
                     <h6 class=""mb-3"">Discover your next adventure</h6>
                     <div class=""flex-wrap search-wthree-field mt-md-5 mt-4"">
                         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff7436", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff7638", async() => {
                 WriteLiteral(@"
                             <div class=""row book-form"">
                                 <div class=""form-input col-md-4 mt-md-0 mt-3"">
 
                                     <select name=""selectpicker"" class=""selectpicker"">
                                         ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff7967", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff8169", async() => {
                     WriteLiteral("Destinaion");
                 }
                 );
@@ -110,7 +117,7 @@ using EntityLayer.Concrete;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff9234", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff9436", async() => {
                     WriteLiteral("Africa");
                 }
                 );
@@ -126,7 +133,7 @@ using EntityLayer.Concrete;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff10497", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff10699", async() => {
                     WriteLiteral("America");
                 }
                 );
@@ -142,7 +149,7 @@ using EntityLayer.Concrete;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff11762", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff11964", async() => {
                     WriteLiteral("Asia");
                 }
                 );
@@ -158,7 +165,7 @@ using EntityLayer.Concrete;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff13024", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff13226", async() => {
                     WriteLiteral("Eastern Europe");
                 }
                 );
@@ -174,7 +181,7 @@ using EntityLayer.Concrete;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff14296", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff14498", async() => {
                     WriteLiteral("Europe");
                 }
                 );
@@ -190,7 +197,7 @@ using EntityLayer.Concrete;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                                        ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff15560", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b03578c1e812f88edc60df860e5c34a069fde3ff15762", async() => {
                     WriteLiteral("South America");
                 }
                 );

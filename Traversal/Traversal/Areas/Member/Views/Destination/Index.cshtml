@@ -1,0 +1,53 @@
+﻿@model List<Destination>
+
+<hr class="my-5" />
+
+<!-- Bordered Table -->
+<div class="card">
+    <div class="card-header" style="display:flex;justify-content:space-between">
+        <h2>
+            Destinations
+        </h2>
+        <div>
+           @* <a class="btn btn-primary rounded-pill text-white" style="margin-right:10px">Create</a>*@
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>City</th>
+                        <th>Duration</th>
+                        <th>Capacity</th>
+                        <th>Price</th>
+                        <th>Deadline</th>
+                        <th style="text-align:right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Destination item in Model)
+                    {
+                        <tr>
+                            <td>@item.City</td>
+                            <th>@item.DayNight</th>
+                            <th>@item.Capacity</th>
+                            <th>@item.Price$</th>
+                            <th>@item.CreatedTime.ToShortDateString()</th>
+                            <td>
+                                <div style="display:flex;justify-content:flex-end">
+                                    <a asp-area="default" asp-controller="Destination" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-warning text-white" style="margin-right:10px">Detail</a>
+                                    <a class="btn btn-success text-white" style="margin-right:10px">Reservation</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--/ Bordered Table -->
+
+<hr class="my-5" />
+

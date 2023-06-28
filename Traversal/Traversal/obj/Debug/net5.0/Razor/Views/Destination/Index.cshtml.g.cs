@@ -27,6 +27,13 @@ using Traversal.Models;
 #line hidden
 #nullable disable
 #nullable restore
+#line 3 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\_ViewImports.cshtml"
+using Traversal.ViewsModel;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\Destination\Index.cshtml"
 using EntityLayer.Concrete;
 
@@ -34,7 +41,7 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d5ab006858d33cc79b160781398a8ccbf0578bf2", @"/Views/Destination/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d12b22944ccdb0db5b735e5162ab2aa607e1c5dc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e20fb38c3f65a54875188bcf06054c04eba34df1", @"/Views/_ViewImports.cshtml")]
     #nullable restore
     public class Views_Destination_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<Destination>>
     #nullable disable
@@ -77,7 +84,7 @@ using EntityLayer.Concrete;
             <h2 class=""title"">Destinations </h2>
             <ul class=""breadcrumbs-custom-path mt-2"">
                 <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5ab006858d33cc79b160781398a8ccbf0578bf25456", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5ab006858d33cc79b160781398a8ccbf0578bf25658", async() => {
                 WriteLiteral("Home");
             }
             );
@@ -118,8 +125,8 @@ using EntityLayer.Concrete;
 #line hidden
 #nullable disable
             WriteLiteral("                    <div class=\"col-lg-4 col-md-4 col-6\">\r\n                        <div class=\"column\">\r\n                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5ab006858d33cc79b160781398a8ccbf0578bf27671", async() => {
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d5ab006858d33cc79b160781398a8ccbf0578bf27887", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5ab006858d33cc79b160781398a8ccbf0578bf27873", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "d5ab006858d33cc79b160781398a8ccbf0578bf28089", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -172,7 +179,7 @@ AddHtmlAttributeValue("", 1116, destination.Image, 1116, 18, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n                            <div class=\"info\">\r\n                                <h4>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5ab006858d33cc79b160781398a8ccbf0578bf211618", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d5ab006858d33cc79b160781398a8ccbf0578bf211820", async() => {
 #nullable restore
 #line 30 "C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\Views\Destination\Index.cshtml"
                                                                                      Write(destination.City);

@@ -1,6 +1,11 @@
+using DataAccessLayer.Concrete;
+using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -24,10 +29,33 @@ namespace Traversal
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+            services.AddDbContext<Context>();
+            services.AddIdentity<AppUser, AppRole>(Identityoptions =>
+            {
+				Identityoptions.User.RequireUniqueEmail = true;
+				Identityoptions.User.AllowedUserNameCharacters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789._";
+				Identityoptions.Password.RequiredLength = 8;
+				Identityoptions.Password.RequireNonAlphanumeric = false;
+				Identityoptions.Lockout.AllowedForNewUsers = true;
+				Identityoptions.Lockout.MaxFailedAccessAttempts = 5;
+				Identityoptions.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(1);
+			}).AddEntityFrameworkStores<Context>().AddDefaultTokenProviders();
+            services.AddMvc(config =>
+            {
+                var policy = new AuthorizationPolicyBuilder()
+                .RequireAuthenticatedUser().Build();
+                config.Filters.Add(new AuthorizeFilter(policy));
+            });
+            services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+		private object AuthhorizatioonPolicyBuilder()
+		{
+			throw new NotImplementedException();
+		}
+
+		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+		public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -43,15 +71,19 @@ namespace Traversal
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
+				endpoints.MapControllerRoute(
+				  name: "areas",
+				  pattern: "{area:exists}/{controller=Profile}/{action=Index}/{id?}"
+				);
+				endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
-        }
+		}
     }
 }
