@@ -1,0 +1,66 @@
+﻿@model UpdateMemberVM
+
+<!-- Content -->
+<div class="container-xxl flex-grow-1 container-p-y">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card mb-4">
+
+                <div class="card-body">
+                    <form method="post">
+                        <div class="row">
+                            <div class="mb-3 col-md-6 form-group">
+                                <label class="form-label">Photo</label>
+                                <input class="form-control" asp-for="Photo" />
+                                <span class="text-danger" asp-validation-for="Photo"></span>
+                            </div>
+
+                            <div class="mb-3 col-md-6 form-group">
+                                <label class="form-label">Name</label>
+                                <input class="form-control" asp-for="Name" />
+                                <span class="text-danger" asp-validation-for="Name"></span>
+                            </div>
+
+                            <div class="mb-3 col-md-6 form-group">
+                                <label class="form-label">Surname</label>
+                                <input class="form-control" asp-for="Surname" />
+                                <span class="text-danger" asp-validation-for="Surname"></span>
+                            </div>
+
+                            <div class="mb-3 col-md-6 form-group">
+                                <label class="form-label">Username</label>
+                                <input class="form-control" asp-for="Username" />
+                                <span class="text-danger" asp-validation-for="Username"></span>
+                            </div>
+
+                            <div class="mb-3 col-md-6 form-group">
+                                <label class="form-label">Email</label>
+                                <input class="form-control" asp-for="Email" />
+                                <span class="text-danger" asp-validation-for="Email"></span>
+                            </div>
+
+                            <div class="mb-3 col-md-6 form-group">
+                                <label class="form-label" for="phoneNumber">Phone Number</label>
+                                <div class="input-group input-group-merge">
+                                    <span class="input-group-text">US (+1)</span>
+                                    <input asp-for="Phone" class="form-control" />
+                                </div>
+                                <span class="text-danger" asp-validation-for="Phone"></span>
+                            </div>
+
+                        </div>
+                        <div class="mt-2">
+                            <button type="submit" class="btn btn-primary me-2">Save Changes</button>
+                            <a asp-action="Index" class="btn btn-info">Go Back</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section ScriptMember{
+    <partial name="_ValidationScriptsPartial" />
+}
