@@ -72,6 +72,7 @@ namespace Traversal.Controllers
 		{
 			AppUser user = new AppUser
 			{
+				Image = "wwwroot/member/assets/img/user/user.png",
 				Name = registerVM.Name,
 				Surname = registerVM.Surname,
 				Email = registerVM.Email,

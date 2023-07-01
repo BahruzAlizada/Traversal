@@ -184,3 +184,13 @@ C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Member\Views\Destination\Index.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Member\Views\Profile\ChangePassword.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Member\Views\Profile\Update.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Member\Views\Destination\Reservation.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Member\Views\Reservation\Index.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\_AdminLayout.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewImports.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\_ViewStart.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\Destination\Index.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\Destination\Create.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Views\ErrorPage\Error404.cshtml.g.cs

@@ -28,8 +28,9 @@ namespace Traversal.Areas.Member.Controllers
         public async Task<IActionResult> Index()
         {
             AppUser user = await _userManager.FindByNameAsync(User.Identity.Name);
-            UpdateMemberVM dbupdateMember = new UpdateMemberVM
+            MemberVM member = new MemberVM
             {
+                Image=user.Image,
                 Name = user.Name,
                 Surname = user.Surname,
                 Email = user.Email,
@@ -37,7 +38,7 @@ namespace Traversal.Areas.Member.Controllers
                 Username = user.UserName
             };
          
-            return View(dbupdateMember);
+            return View(member);
         }
             
         #endregion
@@ -66,7 +67,7 @@ namespace Traversal.Areas.Member.Controllers
             if (updateMember.Photo != null)
             {
                 #region Image
-                if(updateMember.Photo != null)
+                if (updateMember.Photo != null)
                 {
                     if (!updateMember.Photo.IsImage())
                     {
@@ -78,7 +79,7 @@ namespace Traversal.Areas.Member.Controllers
                         ModelState.AddModelError("Photo", "Max 512Kb");
                         return View();
                     }
-                    string folder = Path.Combine(_env.WebRootPath,"member", "assets", "img", "user");
+                    string folder = Path.Combine(_env.WebRootPath, "member", "assets", "img", "user");
                     updateMember.Image = await updateMember.Photo.SaveFileAsync(folder);
                     string path = Path.Combine(_env.WebRootPath, folder, user.Image);
                     if (System.IO.File.Exists(path))
@@ -92,7 +93,7 @@ namespace Traversal.Areas.Member.Controllers
             user.Name = updateMember.Name;
             user.Surname = updateMember.Surname;
             user.Email = updateMember.Email;
-            user.UserName = updateMember.Email;
+            user.UserName = updateMember.Username;
             user.PhoneNumber = updateMember.Phone;
 
 

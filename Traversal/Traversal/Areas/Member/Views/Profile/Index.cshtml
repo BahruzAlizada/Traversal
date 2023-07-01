@@ -1,4 +1,4 @@
-﻿@model UpdateMemberVM
+﻿@model MemberVM
  
 <!-- Content -->
 <div class="container-xxl flex-grow-1 container-p-y">
@@ -12,8 +12,7 @@
                 <div class="card-body">
 
                     <div class="d-flex align-items-start align-items-sm-center gap-4">
-                        <img src="~/member/assets/img/user/@Model.Image"
-                             alt="user-avatar"
+                        <img src="~/member/assets/img/user/@Model.Image"  
                              class="d-block rounded"
                              height="100"
                              width="100"
@@ -22,13 +21,16 @@
                     </div>
                     
                         <div class="row">
-
-                            <div class="mb-3 col-md-6 form-group">
+                            <p>@Model.Name</p>
+                            <p>@Model.Surname</p>
+                            <p>@Model.Username</p>
+                            <p>@Model.Email</p>
+                            @*<div class="mb-3 col-md-6 form-group">
                                 <label class="form-label">Name</label>
                                 <input class="form-control" value="@Model.Name" readonly />
-                            </div>
+                            </div>*@
 
-                            <div class="mb-3 col-md-6 form-group">
+                          @*  <div class="mb-3 col-md-6 form-group">
                                 <label class="form-label">Surname</label>
                                 <input class="form-control" value="@Model.Surname" readonly />
                             </div>
@@ -49,11 +51,11 @@
                                     <span class="input-group-text">US (+1)</span>
                                     <input class="form-control" value="@Model.Phone" readonly />
                                 </div>
-                            </div>
+                            </div>*@
                         
                         </div>
                         <div class="mt-2">
-                            <a asp-route-Username="@Model.Username" asp-action="Update" class="btn btn-success text-white">Update Profile</a>
+                            <a asp-route-Username="@User.Identity.Name" asp-action="Update" class="btn btn-success text-white">Update Profile</a>
                             <a asp-route-Username="@Model.Username" asp-action="ChangePassword" class="btn btn-primary text-white">Change Password</a>
                         </div>
                     

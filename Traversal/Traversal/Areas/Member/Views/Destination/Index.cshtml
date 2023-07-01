@@ -16,13 +16,13 @@
         <div class="table-responsive text-nowrap">
             <table class="table table-bordered">
                 <thead>
-                    <tr>
-                        <th>City</th>
-                        <th>Duration</th>
-                        <th>Capacity</th>
-                        <th>Price</th>
-                        <th>Deadline</th>
-                        <th style="text-align:right">Actions</th>
+                    <tr style="background-color:black;">
+                        <th style="color:white;">City</th>
+                        <th style="color:white;">Duration</th>
+                        <th style="color:white;">Capacity</th>
+                        <th style="color:white;">Price</th>
+                        <th style="color:white;">Deadline</th>
+                        <th style="text-align:right;color:white;">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -37,7 +37,7 @@
                             <td>
                                 <div style="display:flex;justify-content:flex-end">
                                     <a asp-area="default" asp-controller="Destination" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-warning text-white" style="margin-right:10px">Detail</a>
-                                    <a class="btn btn-success text-white" style="margin-right:10px">Reservation</a>
+                                    <a asp-route-id="@item.Id" asp-action="Reservation" class="btn btn-success text-white" style="margin-right:10px">Reservation</a>
                                 </div>
                             </td>
                         </tr>

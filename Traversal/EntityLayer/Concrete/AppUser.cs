@@ -12,9 +12,8 @@ namespace EntityLayer.Concrete
         public string Image { get; set; }
         public string Name { get; set; }
         public string Surname { get; set; }
-        public bool Gender { get; set; }
-        public string Phone { get; set; }
         public DateTime CreatedTime { get; set; } = DateTime.UtcNow.AddHours(4);
         public bool IsDeactive { get; set; }
+        public List<Reservation> Reservations { get; set; }
     }
 }

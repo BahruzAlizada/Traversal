@@ -1,0 +1,75 @@
+﻿@model List<Destination>
+@{
+    int say = 0;
+}
+<hr class="my-5" />
+
+<!-- Bordered Table -->
+<div class="card">
+    <div class="card-header" style="display:flex;justify-content:space-between">
+        <h2>
+            Destinations
+        </h2>
+        <div>
+             <a asp-action="Create" class="btn btn-success text-white" style="margin-right:10px">Create</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-bordered">
+                <thead>
+                    <tr style="background-color:black;">
+                        <th style="color:white;">#</th>
+                        <th style="color:white;">City</th>
+                        <th style="color:white;">Duration</th>
+                        <th style="color:white;">Capacity</th>
+                        <th style="color:white;">Price</th>
+                        <th style="color:white;">Deadline</th>
+                        <th style="color:white;">Status</th>
+                        <th style="color:white;">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (Destination item in Model)
+                    {
+                        <tr>
+                            <td style="color:black;">@{say = say + 1;}</td>
+                            <td>@item.City</td>
+                            <th>@item.DayNight</th>
+                            <th>@item.Capacity</th>
+                            <th>@item.Price$</th>
+                            <th>@item.CreatedTime.ToShortDateString()</th>
+                            <th>
+                                @if (item.IsDeactive)
+                                {
+                                    <span style="background-color:red;color:white;padding:6px 4px;">Deactive</span>
+                                }
+                                else
+                                {
+                                    <span style="background-color:green;color:white;padding:6px 4px;">Active</span>
+                                }
+                            </th>
+                            <td>
+                                <div style="display:flex;justify-content:flex-end">
+                                    <a asp-area="default" asp-controller="Destination" asp-action="Detail" asp-route-id="@item.Id" class="btn btn-warning text-white" style="margin-right:10px">Detail</a>
+                                    <a asp-route-id="@item.Id" asp-action="Reservation" class="btn btn-primary text-white" style="margin-right:10px">Update</a>
+                                    @if (item.IsDeactive)
+                                    {
+                                        <a asp-route-id="@item.Id" asp-action="Activity" class="btn btn-success text-white" style="margin-right:10px;width:117px;">Activate</a>
+                                    }
+                                    else
+                                    {
+                                        <a asp-route-id="@item.Id" asp-action="Activity" class="btn btn-danger text-white" style="margin-right:10px;width:117px;">Deactivate</a>
+                                    }
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--/ Bordered Table -->
+
+<hr class="my-5" />

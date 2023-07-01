@@ -23,9 +23,11 @@ namespace DataAccessLayer.Repository
             return await c.Set<T>().ToListAsync();
         }
 
-        public Task InsertAsync(T t)
+        public async Task InsertAsync(T t)
         {
-            throw new NotImplementedException();
+            using var c = new Context();
+            await c.Set<T>().AddAsync(t);
+            await c.SaveChangesAsync();
         }
 
         public Task UpdateAsync(T t)

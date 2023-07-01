@@ -1,10 +1,16 @@
+using BusinessLayer.Abstract;
+using BusinessLayer.Concrete;
+using BusinessLayer.Container;
+using DataAccessLayer.Abstract;
 using DataAccessLayer.Concrete;
+using DataAccessLayer.EntityFramework;
 using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -29,6 +35,7 @@ namespace Traversal
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+    
             services.AddDbContext<Context>();
             services.AddIdentity<AppUser, AppRole>(Identityoptions =>
             {
@@ -47,7 +54,10 @@ namespace Traversal
                 config.Filters.Add(new AuthorizeFilter(policy));
             });
             services.AddMvc();
-        }
+
+            services.ContainerDependencies();
+
+		}
 
 		private object AuthhorizatioonPolicyBuilder()
 		{
@@ -70,13 +80,21 @@ namespace Traversal
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            app.UseStatusCodePagesWithReExecute("/ErrorPage/Error404", "?code={0}");
+
+
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
-				endpoints.MapControllerRoute(
+                endpoints.MapControllerRoute(
+                 name: "areas",
+                pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+            );
+
+                endpoints.MapControllerRoute(
 				  name: "areas",
 				  pattern: "{area:exists}/{controller=Profile}/{action=Index}/{id?}"
 				);

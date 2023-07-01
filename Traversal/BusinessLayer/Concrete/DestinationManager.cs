@@ -19,9 +19,10 @@ namespace BusinessLayer.Concrete
             _DestinationDal = destinationDal;
         }
 
-        public Task<Destination> GetByIdAsync(int? id)
+        public async Task<Destination> GetByIdAsync(int? id)
         {
-            throw new NotImplementedException();
+            using var c = new Context();
+            return await c.Set<Destination>().FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<List<Destination>> GetListAsync()

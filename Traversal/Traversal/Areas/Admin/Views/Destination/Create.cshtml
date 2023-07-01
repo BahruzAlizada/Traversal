@@ -1,0 +1,103 @@
+﻿@model Destination
+
+<div class="row">
+    <div class="col-8">
+        <div class="card mb-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+                <small class="text-muted float-end">Destination</small>
+            </div>
+            <div class="card-body">
+                <form method="post" enctype="multipart/form-data">
+                    <div class="mb-3 form-group">
+                        <label asp-for="Photo" class="form-label">Photo</label>
+                        <input asp-for="Photo" accept="image/*" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Photo"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="City" class="form-label">City</label>
+                        <input asp-for="City" class="form-control" />
+                        <span class="text-danger" asp-validation-for="City"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="Capacity" class="form-label">Capacity</label>
+                        <input asp-for="Capacity" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Capacity"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="DayNight" class="form-label">DayNight</label>
+                        <input asp-for="DayNight" class="form-control" />
+                        <span class="text-danger" asp-validation-for="DayNight"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="Price" class="form-label">Price</label>
+                        <input asp-for="Price" class="form-control" />
+                        <span class="text-danger" asp-validation-for="Price"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="CreatedTime" class="form-label">Time</label>
+                        <input asp-for="CreatedTime" type="date" class="form-control" />
+                        <span class="text-danger" asp-validation-for="CreatedTime"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="Description" class="form-label">Description</label>
+                        <textarea asp-for="Description" class="form-control"></textarea>
+                        <span class="text-danger" asp-validation-for="Description"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="DestinationDetail.DescriptionBase" class="form-label">Detail Description Base</label>
+                        <textarea id="editor1" asp-for="DestinationDetail.DescriptionBase" class="form-control"></textarea>
+                        <span class="text-danger" asp-validation-for="DestinationDetail.DescriptionBase"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="DestinationDetail.DescriptionOne" class="form-label">Detail Description One</label>
+                        <textarea id="editor2" asp-for="DestinationDetail.DescriptionOne" class="form-control"></textarea>
+                        <span class="text-danger" asp-validation-for="DestinationDetail.DescriptionOne"></span>
+                    </div>
+
+                    <div class="mb-3 form-group">
+                        <label asp-for="DestinationDetail.DescriptionTwo" class="form-label">Detail Description Two</label>
+                        <textarea id="editor3" asp-for="DestinationDetail.DescriptionTwo" class="form-control"></textarea>
+                        <span class="text-danger" asp-validation-for="DestinationDetail.DescriptionTwo"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <a asp-action="Index" class="btn btn-primary">Go Back</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scriptadmin{
+
+    <partial name="_ValidationScriptsPartial" />
+    <script src="https://cdn.ckeditor.com/ckeditor5/38.1.0/classic/ckeditor.js"></script>
+
+    <script>
+        ClassicEditor
+            .create(document.querySelector('#editor1'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#editor2'))
+            .catch(error => {
+                console.error(error);
+            });
+
+        ClassicEditor
+            .create(document.querySelector('#editor3'))
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+}
