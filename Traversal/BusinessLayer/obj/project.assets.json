@@ -2307,6 +2307,16 @@
           "bin/placeholder/DataAccessLayer.dll": {}
         }
       },
+      "DTOLayer/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/DTOLayer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DTOLayer.dll": {}
+        }
+      },
       "EntityLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
@@ -7097,6 +7107,11 @@
       "path": "../DataAccessLayer/DataAccessLayer.csproj",
       "msbuildProject": "../DataAccessLayer/DataAccessLayer.csproj"
     },
+    "DTOLayer/1.0.0": {
+      "type": "project",
+      "path": "../DTOLayer/DTOLayer.csproj",
+      "msbuildProject": "../DTOLayer/DTOLayer.csproj"
+    },
     "EntityLayer/1.0.0": {
       "type": "project",
       "path": "../EntityLayer/EntityLayer.csproj",
@@ -7105,6 +7120,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "DTOLayer >= 1.0.0",
       "DataAccessLayer >= 1.0.0",
       "EntityLayer >= 1.0.0",
       "FluentValidation >= 11.5.2",
@@ -7146,6 +7162,9 @@
           "projectReferences": {
             "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DataAccessLayer\\DataAccessLayer.csproj": {
               "projectPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DataAccessLayer\\DataAccessLayer.csproj"
+            },
+            "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\DTOLayer.csproj": {
+              "projectPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\DTOLayer.csproj"
             },
             "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\EntityLayer\\EntityLayer.csproj": {
               "projectPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\EntityLayer\\EntityLayer.csproj"

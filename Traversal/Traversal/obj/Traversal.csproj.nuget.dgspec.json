@@ -31,6 +31,9 @@
               "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DataAccessLayer\\DataAccessLayer.csproj": {
                 "projectPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DataAccessLayer\\DataAccessLayer.csproj"
               },
+              "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\DTOLayer.csproj": {
+                "projectPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\DTOLayer.csproj"
+              },
               "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\EntityLayer\\EntityLayer.csproj": {
                 "projectPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\EntityLayer\\EntityLayer.csproj"
               }
@@ -193,6 +196,61 @@
         }
       }
     },
+    "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\DTOLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\DTOLayer.csproj",
+        "projectName": "DTOLayer",
+        "projectPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\DTOLayer.csproj",
+        "packagesPath": "C:\\Users\\Esma\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\DTOLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Esma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Esma\\Desktop\\GitHub Project\\Traversal\\Traversal\\EntityLayer\\EntityLayer.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -324,6 +382,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "ClosedXML": {
+              "target": "Package",
+              "version": "[0.102.0, )"
+            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.5.2, )"
@@ -363,6 +425,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[5.0.2, )"
+            },
+            "iTextSharp.LGPLv2.Core": {
+              "target": "Package",
+              "version": "[3.4.3, )"
             }
           },
           "imports": [

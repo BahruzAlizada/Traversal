@@ -17,6 +17,9 @@ namespace BusinessLayer.Container
 		{
 			services.AddScoped<IDestinantionService, DestinationManager>();
 			services.AddScoped<IDestinationDal, EFDestinationDal>();
+
+			services.AddScoped<IContactFormService,ContactFormManager>();
+			services.AddScoped<IContactFormDal, EFContactFormDal>();
 		}
 	}
 }

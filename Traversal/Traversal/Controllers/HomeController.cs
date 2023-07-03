@@ -22,6 +22,7 @@ namespace Traversal.Controllers
 
         public IActionResult Index()
         {
+            _logger.LogInformation("Index Sayfası cagrildi");
             return View();
         }
  

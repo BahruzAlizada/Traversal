@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    int count = 0;
+}
+
+@model List<ContactForm>
+<hr class="my-5" />
+
+
+<!-- Bordered Table -->
+<div class="card">
+    <div class="card-header" style="display:flex;justify-content:space-between">
+        <h2>
+            Contact Us
+        </h2>
+    </div>
+    <div class="card-body">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Subject</th>
+                        <th>Created Time</th>
+                        <th style="text-align:right">Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach(ContactForm item in Model)
+                    {
+                        count++;
+                        <tr>
+                       <td>@count</td>
+                       <td>@item.Name</td>
+                       <td>@item.Email</td>
+                       <td>@item.Subject</td>
+                       <td>@item.CreatedTime.ToShortDateString()</td>
+                        <td>
+                         <div style="display:flex;justify-content:flex-end">
+                         <a class="btn btn-warning rounded-pill text-white" style="margin-right:10px">Detail</a>
+                         <a class="btn btn-info rounded-pill text-white"style="margin-right:10px">Reply</a>
+                         <a class="btn btn-danger rounded-pill text-white"style="margin-right:10px">Delete</a>
+                         </div>
+                        </td>
+                    </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!--/ Bordered Table -->
+
+<hr class="my-5" />

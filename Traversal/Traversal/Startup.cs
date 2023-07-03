@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -55,8 +56,16 @@ namespace Traversal
             });
             services.AddMvc();
 
+            services.AddHttpClient();
+
             services.ContainerDependencies();
 
+            services.AddLogging(x =>
+            {
+                x.ClearProviders(); //Clear 
+                x.SetMinimumLevel(LogLevel.Debug); //Start Debug Logging
+                x.AddDebug();
+            });
 		}
 
 		private object AuthhorizatioonPolicyBuilder()
