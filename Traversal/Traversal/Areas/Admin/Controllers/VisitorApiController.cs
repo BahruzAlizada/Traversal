@@ -17,6 +17,7 @@ namespace Traversal.Areas.Admin.Controllers
             _httpClientFactory = httpClientFactory;
         }
 
+
         #region Index
         public async Task<IActionResult> Index()
         {
@@ -31,6 +32,8 @@ namespace Traversal.Areas.Admin.Controllers
             return View();
         }
         #endregion
+
+
 
         #region Create
         public IActionResult Create()
@@ -55,6 +58,8 @@ namespace Traversal.Areas.Admin.Controllers
             return View();
         }
         #endregion
+
+
 
         #region Update
         public async Task<IActionResult> Update(int? id)
@@ -86,6 +91,8 @@ namespace Traversal.Areas.Admin.Controllers
             return View();
         }
         #endregion
+
+
 
         #region Delete
         [HttpGet]

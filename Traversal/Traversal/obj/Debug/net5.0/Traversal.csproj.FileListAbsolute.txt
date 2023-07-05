@@ -217,3 +217,5 @@ C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\VisitorApi\Index.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\VisitorApi\Create.cshtml.g.cs
 C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\VisitorApi\Update.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\ApiMovie\Index.cshtml.g.cs
+C:\Users\Esma\Desktop\GitHub Project\Traversal\Traversal\Traversal\obj\Debug\net5.0\Razor\Areas\Admin\Views\ApiExchange\Index.cshtml.g.cs

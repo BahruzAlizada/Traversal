@@ -1,0 +1,17 @@
+﻿@model IEnumerable<BookingExchange2VM.Exchange_Rates>
+
+<h1>Api Booking Currency</h1>
+
+<table class="table table-striped">
+	<tr>
+		<th>Ad</th>
+		<th>Oran</th>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.currency</td>
+			<td>@item.exchange_rate_buy</td>
+		</tr>
+	}
+</table>

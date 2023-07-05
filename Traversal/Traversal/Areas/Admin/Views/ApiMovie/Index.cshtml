@@ -1,0 +1,23 @@
+﻿@model List<ApiMovieVM>
+
+<h1>Api IMBD Top 100 Films</h1>
+
+<table class="table table-striped">
+	<tr>
+		<th>#</th>
+		<th>Film Name</th>
+		<th>IMBD</th>
+		<th>Year</th>
+		<th>Trailer</th>
+	</tr>
+	@foreach (var item in Model)
+	{
+		<tr>
+			<td>@item.rank</td>
+			<td>@item.title</td>
+			<td>@item.rating</td>
+			<td>@item.year</td>
+			<td><a href="@item.trailer" target="_blank;" class="btn btn-outline dark">Play trailer</a></td>
+		</tr>
+	}
+</table>
